@@ -1,0 +1,32 @@
+#include <stdlib.h>
+#include <stdio.h>
+  
+int main(){
+int a, b, c;
+char f;
+  
+double Z[12][12];
+double soma = 0.0;
+  
+scanf("%d ", &b);
+scanf("%c",&f);
+ 
+// Para armazenar dados na matriz 
+for(a = 0; a < 12; a++){
+    for(c = 0; c < 12; c++){
+        scanf("%lf",&Z[a][c]);
+ 
+// Para executar o calculo somente na linha escolhida 
+        if(a == b){
+            soma += Z[a][c];
+        }
+    }
+}
+// Para executar o calculo de acordo com a operacao escolhida
+if(f == 'S')
+    printf("%.1f\n", soma);
+else
+    printf("%.1f\n", soma/12.0);
+  
+    return 0;
+}
