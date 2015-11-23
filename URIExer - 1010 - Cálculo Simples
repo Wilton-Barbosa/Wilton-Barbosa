@@ -1,0 +1,14 @@
+#include <stdio.h>
+  
+int main() {
+  
+        int peca1, n_peca1;
+       int peca2, n_peca2;
+       float valor_peca1, valor_peca2, valor_total;
+       scanf("%d %d %f",&peca1,&n_peca1, &valor_peca1);
+       scanf("%d %d %f",&peca2,&n_peca2, &valor_peca2); 
+       valor_total=(n_peca1*valor_peca1)+(n_peca2*valor_peca2);
+       printf("VALOR A PAGAR: R$ %.2f\n", valor_total);
+  
+    return 0;
+}
