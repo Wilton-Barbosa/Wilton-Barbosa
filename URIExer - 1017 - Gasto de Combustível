@@ -1,0 +1,13 @@
+#include <stdio.h>
+  
+int main() {
+  
+    int H, VEL;
+       float KM=12;
+       scanf("%d %d", &VEL, &H);
+        
+       KM = (VEL * H)/KM;
+       printf("%.3f\n", KM);
+  
+    return 0;
+}
