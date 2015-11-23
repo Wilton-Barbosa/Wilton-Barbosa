@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+  
+int main(){
+  
+    int a,b,c,z;
+    char num[50];
+  
+    scanf("%d",&a);
+     
+    // Comparar e armazenar os valores
+    for(c=0; c<a; c++){
+    scanf("%s",&num);
+    scanf("%d",&b);
+     
+    // Comparar e fazer calculo        
+    for(z=0; z<50; z++){
+        if(num[z] == '\0') break;
+        if((num[z] - b) < 65) printf("%c", (num[z] - b)+ 26);
+            else printf("%c", (num[z] - b));
+            }
+            printf("\n");        
+    }
+  
+    return 0;
+}
