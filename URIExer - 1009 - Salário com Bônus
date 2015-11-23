@@ -1,0 +1,18 @@
+#include <stdio.h>
+  
+int main() {
+  
+    char nome;
+       double SF, vendas, B;
+        
+       scanf("%s", &nome);
+       scanf("%lf", &SF);
+       scanf("%lf", &vendas);
+        
+       B = SF + (15*vendas)/100;
+        
+       printf("TOTAL = R$ %.2f\n", B);
+        
+  
+    return 0;
+}
