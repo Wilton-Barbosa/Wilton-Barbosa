@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+  
+int main(){
+    int x,y,z;
+    float soma,a;
+      
+    scanf("%d",&x);
+    while(x > 0){
+            scanf("%d",&y);
+            soma = 0;
+            a = 0;
+            int num[y];
+             
+            // Guarda Valor
+            for(z = 0; z < y; z++){
+                    scanf("%d",&num[z]);
+                    soma+=num[z];
+            }
+            soma /= y;
+             
+            // Mostra o valor
+            for(z = 0; z < y; z++){
+                    if(num[z] > soma) a++;
+            }
+            printf("%.3f%c\n",a/y*100.000,'%');
+            x--;
+    }
+    return 0;
+}
