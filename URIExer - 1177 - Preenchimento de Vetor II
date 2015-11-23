@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+ 
+  int main(){
+  int y, x, z;
+  int N[1000];
+  scanf("%d", &z);
+  x = 0;
+ 
+  // Guarda valor e mostra resultado
+  for(y = 0; y < 1000; y++){
+    printf("N[%d] = %d\n", y, x);
+    x++;
+    if(x == z) x = 0;
+    }
+  
+    return 0;
+}
