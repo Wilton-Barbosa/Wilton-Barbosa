@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int main(){
+  int Operacao, ALCOOL=0, GASOLINA=0, DIESEL=0;
+     
+  // Laço das operação escolhida
+  while(Operacao!=4){
+        scanf("%d",&Operacao);
+         
+  // Somar valor escolhido conforme a opção 
+     if (Operacao==1)
+         ALCOOL++;
+     else if (Operacao==2)
+         GASOLINA++;
+     else if (Operacao==3)
+         DIESEL++;
+     else if (Operacao==4){  
+        printf("MUITO OBRIGADO\n");
+        printf("Alcool: %d\n", ALCOOL);
+        printf("Gasolina: %d\n", GASOLINA);
+        printf("Diesel: %d\n", DIESEL);
+      }
+    }
+  
+    return 0;
+}
